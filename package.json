@@ -1,0 +1,20 @@
+{
+  "name": "vuejs-starter-project",
+  "version": "1.0.0",
+  "description": "VueJS starter project",
+  "scripts": {
+    "preinstall": "cd server && npm install && cd ../client && npm install",
+    "start": "concurrently \"cd server && npm run dev\" \"cd client && npm run dev\"",
+    "test": "cd client && npm run test:unit",
+    "prepare": "husky"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "8.0.1",
+    "husky": "^9.1.7"
+  },
+  "volta": {
+    "node": "22.12.0"
+  }
+}
